@@ -1,0 +1,26 @@
+﻿ @page
+@model IndexModel
+
+@{
+    ViewData["Title"] = "Weather";
+}
+
+<h2>Weather</h2>
+
+<form method="post" action="/Weather/GetWeather">
+    <label for="location">Enter your location:</label>
+    <input type="text" id="location" name="location" required />
+    <input type="submit" value="Get Weather" />
+</form>
+
+ @* @if (Model.WeatherData != null)
+{
+    <h3>Weather in @Model.WeatherData.Name:</h3>
+    <p>Temperature: @Model.WeatherData.Main.Temp &deg;C</p>
+    <p>Humidity: @Model.WeatherData.Main.Humidity %</p>
+    <p>Condition: @Model.WeatherData.Weather[0].Description</p>
+    <p>Wind Speed: @Model.WeatherData.Wind.Speed m/s</p>
+} *@
+ 
+
+ 
